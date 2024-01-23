@@ -1,7 +1,7 @@
 ############################################################
 # Dockerfile that contains SteamCMD
 ############################################################
-FROM debian:bullseye-slim as build_stage
+FROM weilbyte/box:arm64v8-debian-11 as build_stage
 
 LABEL maintainer="walentinlamonos@gmail.com"
 ARG PUID=1000
